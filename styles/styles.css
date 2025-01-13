@@ -22,5 +22,30 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 10px; /* Only one `p` rule is kept */
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2); /* Transparent border */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333; /* Replaced invalid 'columns' property */
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    text-align: center;
 }
