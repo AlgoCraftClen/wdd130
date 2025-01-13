@@ -22,7 +22,7 @@ img {
 }
 
 p {
-    padding: 10px; /* Only one `p` rule is kept */
+    padding: 10px; 
 }
 
 main {
