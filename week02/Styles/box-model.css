@@ -1,0 +1,35 @@
+/* .callout styles */
+.callout {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Image styles */
+img {
+    float: left;
+    margin-right: 20px;
+    border: 3px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+    width: 150px;
+    height: auto;
+}
+
+/* Blockquote styles */
+blockquote {
+    margin: 20px 0;
+}
+
+/* Cite styles */
+cite {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
