@@ -1,10 +1,16 @@
+:root {
+    background-color: rgb(72, 131, 131);
+    padding: 20px;
+    color: #010705;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: hsl(156, 52%, 78%);
     display: block;
     padding: 20px;
 }
@@ -46,6 +52,8 @@ aside img {
 
 footer {
     margin-top: 2rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid #0e0a0a;
     text-align: center;
 }
+
+
