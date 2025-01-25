@@ -1,0 +1,134 @@
+/* General Reset */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+    background: #004aad;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-box img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero article {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero article img {
+    float: left;
+    margin-right: 1rem;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    background: #fff;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: justify;
+}
+
+section img {
+    max-width: 150px;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background: #004aad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer nav a img {
+    max-width: 30px;
+    height: auto;
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+footer nav a img:hover {
+    transform: scale(1.2);
+}

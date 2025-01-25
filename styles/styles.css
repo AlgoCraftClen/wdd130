@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(72, 131, 131);
+    background-color: hwb(0 28% 70%);
     padding: 20px;
     color: #010705;
 }
@@ -16,7 +16,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(185, 185, 189);
 }
 
 img {
@@ -29,6 +29,7 @@ img {
 
 p {
     padding: 0; 
+    color: rgb(214, 217, 220);
 }
 
 main {
@@ -56,4 +57,7 @@ footer {
     text-align: center;
 }
 
+#d1{
+    color: black;
+}
 
