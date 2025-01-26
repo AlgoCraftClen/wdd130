@@ -1,10 +1,16 @@
-/* General font and body styling */
+:root {
+  --color-sapphire: #4059AD;
+  --color-blue-gray: #6B9AC4;
+  --color-tiffany-blue: #97D8C4;
+  --color-anti-flash-white: #EFF2F1;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212; /* Adjust for better readability */
-  color: #f5f5f5;
+  background-color: var(--color-anti-flash-white);
+  color: var(--color-sapphire);
 }
 
 header {
@@ -12,8 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #3e2723; /* Dark brown */
-  color: #fff;
+  background-color: var(--color-blue-gray);
 }
 
 .logo-box img {
@@ -27,7 +32,7 @@ header {
 }
 
 .nav-links li a {
-  color: #f5f5f5;
+  color: var(--color-anti-flash-white);
   text-decoration: none;
   font-weight: 700;
 }
@@ -38,9 +43,9 @@ header {
 
 .hero {
   text-align: center;
-  background-color: #004d60; /* Cool blue */
+  background-color: var(--color-sapphire);
   padding: 2rem 0;
-  color: #fff;
+  color: var(--color-anti-flash-white);
 }
 
 .hero img {
@@ -51,8 +56,8 @@ header {
 
 .history {
   padding: 2rem;
-  background-color: #3e2723;
-  color: #fff;
+  background-color: var(--color-tiffany-blue);
+  color: var(--color-sapphire);
 }
 
 .history h2 {
@@ -76,7 +81,7 @@ header {
 }
 
 footer {
-  background-color: #004d60;
+  background-color: var(--color-blue-gray);
   text-align: center;
   padding: 1rem;
 }
