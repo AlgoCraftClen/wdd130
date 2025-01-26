@@ -1,20 +1,98 @@
-/* General font settings */
-.roboto-font {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  }
-  
-  /* Example for bold text */
-  .roboto-font h1,
-  .roboto-font h2 {
-    font-weight: 700;
-  }
-  
-  /* Apply italic for specific elements */
-  .roboto-font p {
-    font-style: italic;
-  }
-  
+/* General font and body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Adjust for better readability */
+  color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #3e2723; /* Dark brown */
+  color: #fff;
+}
+
+.logo-box img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  background-color: #004d60; /* Cool blue */
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.history {
+  padding: 2rem;
+  background-color: #3e2723;
+  color: #fff;
+}
+
+.history h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.history-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.history-images img {
+  width: calc(25% - 1rem);
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #004d60;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer .social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+footer p {
+  margin: 0;
+}
