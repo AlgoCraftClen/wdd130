@@ -65,20 +65,23 @@ header, main, footer{
   width: 100px;
 }
 
-footer{
-  background-color: bisque;
-  color: fff;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  padding: 2rem;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
 }
 
-.social{
-  grid-column: 3rem;
-  justify-self: end;
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.social img{
+.social-icons img {
   width: 3rem;
 }
 
