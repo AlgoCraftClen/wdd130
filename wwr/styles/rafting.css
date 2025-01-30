@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #4059ad; 
-  --secondary-color: #6b9ac4 
+  --primary-color: #4059ad;
+  --secondary-color: #6b9ac4;
   --accent1-color: #97d8c9;
-  --accent2-color: #eff2f1; 
---heading-font: 'Roboto', serif
---paragraphp-font: 'Raleway' , serif
+  --accent2-color: #eff2f1;
+  --heading-font: 'Roboto', serif;
+  --paragraph-font: 'Raleway', serif;
 }
 
 body{
@@ -15,9 +15,30 @@ h1, h2, h3, h4, h5, h6{
   font-family: var(--heading-font);
 }
 
-header, main, footer{
-  max-width: 1200px;
-  margin: 0 auto
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header img{
+  padding: 0px 90px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0px 90px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 .hero{
@@ -28,14 +49,14 @@ header, main, footer{
   width: 100%;
 }
 
-.hero h1{
+.hero h1 {
   position: absolute;
   top: 1em;
   left: 50%;
-  transform: translateX(50%);
+  transform: translateX(-50%);
   background-color: #ffffff95;
-  color: var(--accent1-color);
-  font-size: 3em;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .hero article{
@@ -54,15 +75,47 @@ header, main, footer{
 
 .hero article p{
   font-family: 'Raleway' sans-serif;
-  color: var(--accent1-color);
+  color: var(--accent2-color);
   font-size: x-large;
   text-align: left;
   padding: 1rem;
-  font-weight: 500px;
+  font-weight: 700px;
 }
 
-.adventure-images{
-  width: 100px;
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between elements */
+  max-width: 900px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the section */
+  padding: 20px;
+  text-align: center;
+}
+
+.history h2 {
+  white-space: nowrap; /* Prevents wrapping */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.history p {
+  flex: 1; /* Allows paragraphs to take equal space */
+  max-width: 500px; /* Adjust width for readability */
+  text-align: justify;
+}
+
+.adventure-images {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+  padding: 20px 0px;
+}
+
+.adventure-images img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
 }
 
 footer {
