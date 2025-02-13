@@ -6,8 +6,8 @@
   --heading-font: 'Roboto', serif;
 }
 
-body{
-  font-family: var(--primary-color);
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -40,10 +40,9 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: var(--accent1-color);
-  color: var(--accent1-color);
-  font-family: var(--heading-font)
+  color: white; /* Ensuring contrast */
 }
 
 .hero{
@@ -168,4 +167,10 @@ footer {
 .social-icons img {
   width: 3rem;
 }
+
+.gmap {
+  max-width: 100%;
+  height: auto;
+}
+
 

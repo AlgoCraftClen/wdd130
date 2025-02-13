@@ -24,33 +24,39 @@
     </nav>
   </header>
 
-  <main class="conatactus">
+  <main class="contactus">
     <h1>Contact Us</h1>
-    <form action="#" class="conatactus">
-        <fieldset>
-            <label for="name">Name:</label>
-            <input type="name" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-        </fieldset>
-
-        <fieldset class="radio_inputs">
-            <input type="radio" id="general" name="drone" value="general" checked>
-            <label for="general">General Question</label>
-            <input type="radio" id="reservations" name="res" value="reservations">
-            <label for="reservations">Reservation Question</label>
-        </fieldset>
-
-        <fieldset>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" cols="40" rows="10" required></textarea>
-        </fieldset>
-        <div class="signup">
-            <input type="checkbox" name="newsletter" id="newsletter">
-            <label for="newsletter">Subscribe me to the monthly newsletter</label>
-        </div>
-        <button type="submit">Send Message</button>
-    <form/>   
+    <form action="#" class="contactus">
+      <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+  
+      <fieldset class="radio_inputs">
+        <input type="radio" id="general" name="inquiryType" value="general" checked>
+        <label for="general">General Question</label>
+  
+        <input type="radio" id="reservations" name="inquiryType" value="reservations">
+        <label for="reservations">Reservation Question</label>
+      </fieldset>
+  
+      <fieldset>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="40" rows="10" required></textarea>
+      </fieldset>
+  
+      <div class="signup">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe me to the monthly newsletter</label>
+      </div>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+     
 
     <section class="address">
         <h2>Our Contact Info</h2>
