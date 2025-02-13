@@ -1,63 +1,105 @@
-:root {
-    background-color: hwb(0 28% 70%);
-    padding: 20px;
-    color: #010705;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: hsl(156, 52%, 78%);
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+ }
+ 
+ header, .grid, footer {
+   max-width: 840px;
+   margin: 0 auto;
+ }
+ :root {
+    --heading-color:rgb(101, 98, 117);
+    --pading:5px;
+ }
+ 
+ .grid {
+    display:grid;
+    align-items: center;
+ }
+ nav {
+    background-color: rgb(101, 98, 117);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ nav a {
+    color: white; /*same as #fff */
     display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: rgb(185, 185, 189);
-}
-
-img {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+ }
+ body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:18px;  
+ }
+ h1 {
+    color: var(--heading-color);
+    padding: 1rem;
+    border-bottom: 1px solid black;
+ }
+ img {
     width: 150px;
     height: auto;
     border: 1px solid black;
-    padding: 2px;
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 0; 
-    color: rgb(214, 217, 220);
-}
-
-main {
-    max-width: 840px;
-}
-
-aside {
-    width: 20rem;
+ }
+ 
+ p { 
+    padding: 0;
+    font-size: 20px;
+    margin: 1rem;   
+  }
+ 
+ main {
+    grid-column: 2/3;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* Transparent border */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333; /* Replaced invalid 'columns' property */
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
+ } 
+ main p {color:var(--heading-color)} 
+ 
+ aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row:1/2;
+    display:grid;
+    place-items: center;
+ }
+ aside h2 {
+    position: absolute;
+    top: 18px;
+ 
+ }
+ /* style the img inside the aside*/
+ aside img {
+    width: 250px;
+    height: auto;   
+ }
+ /*To not allow the existing img CSS selector to affect this image in aside, change the selector for the existing profile img to be more exclusive by adding the main parent selector.*/
+ main img {
+    width: 150px;
     height: auto;
-}
-
-footer {
-    margin-top: 2rem;
-    border-top: 1px solid #0e0a0a;
+    float: right;
+    margin: 0 0 1rem 1rem;
+ }
+ footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
-}
-
-#d1{
-    color: black;
-}
-
+    font-size: 2px;
+ }
+ /* Class Selectors */
+ .box {
+    margin:1rem;
+    border:1rem;
+    padding:1rem;
+    background-color:rgb(184, 201, 207);
+    color:rgba(32, 27, 17, 0.909);
+ } 
+ .indent {
+    padding-left: 2rem;
+ }
