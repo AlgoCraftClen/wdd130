@@ -175,172 +175,79 @@ footer {
 *
 ********************************************/
 
-/* Main Contact Section */
-main.contactus {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: 5rem auto;
-  background: #1e1e1e;
-  border-radius: 5rem;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  padding: 3rem;
-}
-
-/* Heading */
-h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* Contact Form and Map Layout */
-.contact-container {
+.contact-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  gap: 3rem;
-}
-
-/* Contact Form - Moves to the Left */
-.contact-form {
-  flex: 1;
-  background-color: #282828;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
-}
-
-form.contactus {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-fieldset {
-  border: none;
-  padding: 10px 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  background: #333;
-  color: #fff;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.radio_inputs {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.signup {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-button {
-  background-color: #3498db;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #2980b9;
-}
-
-/* Map Section - Moves to the Right */
-.map-container {
-  flex: 1;
-  background-color: #282828;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.gmap {
-  width: 100%;
-  height: 450px;
-  border: none;
-  border-radius: 10px;
-}
-
-/* Horizontal Rule */
-.hrule {
-  border: none;
-  height: 3px;
-  background-color: #fff;
-  margin: 40px auto;
-  width: 80%;
-}
-
-/* Employees Section - Below */
-.grid.employees {
-  text-align: center;
-  padding: 20px;
-  width: 80%;
+  padding: 40px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.grid.employees figure {
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
+.contact-form {
+  flex: 1;
+  margin-right: 40px;
 }
 
-.grid.employees img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.15);
+.contact-info {
+  flex: 1;
 }
 
-figcaption {
-  margin-top: 10px;
-  font-size: 18px;
+h1, h2 {
+  color: #808080;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #444;
   color: #fff;
-  font-weight: bold;
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 900px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
+.radio-group {
+  margin: 20px 0;
+}
 
-  .map-container, .contact-form {
-    max-width: 100%;
-    text-align: center;
-  }
+textarea {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #fff;
+  margin-bottom: 20px;
+}
 
-  .gmap {
-    height: 350px;
-  }
+.send-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.map-section {
+  margin-top: 40px;
+  width: 100%;
+  height: 400px;
+  background-color: #CD853F;
+}
+
+.employee-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.employee {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
 
 /*******************************************
 *
