@@ -99,15 +99,22 @@ nav a:hover{
 }
 
 .history h2 {
+  position: absolute;
   white-space: nowrap; /* Prevents wrapping */
   font-size: 2rem;
   text-align: center;
+  color: black
 }
 
 .history p {
   flex: 1; /* Allows paragraphs to take equal space */
   max-width: 500px; /* Adjust width for readability */
   text-align: justify;
+}
+
+.history img{
+  width: 300px auto;
+  justify-content: center;
 }
 
 .adventure-images {
@@ -118,7 +125,7 @@ nav a:hover{
 }
 
 .adventure-images img {
-  width: 150px;
+  width: 200px;
   height: auto;
   border-radius: 5px;
 }
