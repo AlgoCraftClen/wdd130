@@ -175,20 +175,39 @@ footer {
 *
 ********************************************/
 /* General Styling */
-
-/* Contact Us Section */
-main.contactus {
-  width: 60%;
-  margin: 40px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-h1, h2 {
-  text-align: center;
+/* Main Container */
+main.contactus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 5rem auto;
+  background: #fff;
+  border-radius: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Contact Us Form - Left */
+.contact-form {
+  flex: 1;
+  max-width: 45%;
+}
+
+h1 {
+  position: absolute;
+  text-align: left;
   color: #2c3e50;
+  top: 275px;
 }
 
 form.contactus {
@@ -199,7 +218,7 @@ form.contactus {
 
 fieldset {
   border: none;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 
 label {
@@ -245,14 +264,14 @@ button:hover {
   background-color: #2980b9;
 }
 
-/* Contact Info Section */
-section.address {
-  text-align: center;
-  padding: 20px;
+/* Contact Info Section - Right */
+.contact-info {
+  flex: 1;
+  max-width: 45%;
   background-color: #ecf0f1;
-  border-radius: 8px;
-  width: 50%;
-  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 address {
@@ -289,10 +308,12 @@ address a:hover {
   width: 80%;
 }
 
-/* Employees Section */
+/* Employees Section - Below */
 .grid.employees {
   text-align: center;
   padding: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .grid.employees figure {
@@ -315,6 +336,20 @@ figcaption {
   color: #555;
   font-weight: bold;
 }
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  main.contactus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form, .contact-info {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 
 
 
