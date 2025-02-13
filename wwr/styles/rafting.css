@@ -143,6 +143,11 @@ figure:nth-child(even) {
   align-self: center;
 }
 
+figcaption {
+  text-align: center;
+  padding: 1em 0;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
