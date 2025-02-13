@@ -175,7 +175,15 @@ footer {
 *
 ********************************************/
 
-.contact-section {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.top-section {
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -183,12 +191,12 @@ footer {
   margin: 0 auto;
 }
 
-.contact-form {
+.form-section {
   flex: 1;
   margin-right: 40px;
 }
 
-.contact-info {
+.map-contact-section {
   flex: 1;
 }
 
@@ -205,7 +213,7 @@ input[type="email"] {
   margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid #444;
-  color: #fff;
+  color: #333;
 }
 
 .radio-group {
@@ -217,7 +225,7 @@ textarea {
   height: 150px;
   background-color: transparent;
   border: 1px solid #444;
-  color: #fff;
+  color: #333;
   margin-bottom: 20px;
 }
 
@@ -230,24 +238,38 @@ textarea {
 }
 
 .map-section {
-  margin-top: 40px;
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: #CD853F;
+  margin-top: 20px;
 }
 
 .employee-section {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
   margin-top: 40px;
 }
 
+.employees {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
 .employee {
+  width: 150px;
+  text-align: center;
+}
+
+.employee img {
   width: 100px;
   height: 100px;
-  border: 2px solid #fff;
   border-radius: 50%;
+  border: 2px solid #fff;
 }
+
+.employee figcaption {
+  margin-top: 10px;
+  font-size: 0.9
 
 /*******************************************
 *
