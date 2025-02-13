@@ -174,14 +174,6 @@ footer {
 *         CSS for Contact Us   
 *
 ********************************************/
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #121212;
-  color: #fff;
-}
 
 /* Main Contact Section */
 main.contactus {
@@ -349,8 +341,6 @@ figcaption {
   .gmap {
     height: 350px;
   }
-}
-
 
 /*******************************************
 *
