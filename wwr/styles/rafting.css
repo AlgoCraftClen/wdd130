@@ -14,9 +14,30 @@ h1, h2, h3, h4, h5, h6{
   font-family: var(--heading-font);
 }
 
-header, main, footer{
-  max-width: 1200px;
-  margin: 0 auto
+header {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Logo on left, nav on right */
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+header img{
+  padding: 0px 90px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0px 90px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 .hero{
@@ -116,3 +137,4 @@ footer {
 .social-icons img {
   width: 3rem;
 }
+
