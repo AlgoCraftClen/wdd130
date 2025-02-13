@@ -237,10 +237,10 @@ textarea {
   cursor: pointer;
 }
 
-.map-section {
+.gmap {
   width: 100%;
   height: 300px;
-  background-color: #CD853F;
+  border: none;
   margin-top: 20px;
 }
 
@@ -269,7 +269,9 @@ textarea {
 
 .employee figcaption {
   margin-top: 10px;
-  font-size: 0.9
+  font-size: 0.9em;
+  color: #555;
+}
 
 /*******************************************
 *
