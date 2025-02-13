@@ -113,6 +113,7 @@ nav a:hover{
 }
 
 .history img{
+  display: flex;
   width: 300px auto;
   justify-content: center;
 }
@@ -128,6 +129,18 @@ nav a:hover{
   width: 200px;
   height: auto;
   border-radius: 5px;
+}
+
+figure:nth-of-type(odd) {
+  background-color: var(--accent1-color);
+  color: black;
+  align-self: center;
+}
+
+figure:nth-child(even) {
+  background-color: var(--secondary-color);
+  color: black;
+  align-self: center;
 }
 
 footer {
