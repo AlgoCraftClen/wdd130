@@ -287,4 +287,35 @@ textarea {
 *
 ********************************************/
 
+.trip-details {
+  padding: 2rem;
+  text-align: center;
+}
+
+.trip-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.trip-details th, .trip-details td {
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+}
+
+.trip-images {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.trip {
+  text-align: center;
+}
+
+.trip img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
 
