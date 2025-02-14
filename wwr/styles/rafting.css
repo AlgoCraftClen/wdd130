@@ -325,3 +325,54 @@ textarea {
 *
 ********************************************/
 
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+  background: var(--secondary-color)
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input {
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.newsletter button {
+  background-color: var(--accent2-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button {
+  background: var(--accent1-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
